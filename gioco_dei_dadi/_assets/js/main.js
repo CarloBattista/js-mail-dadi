@@ -15,12 +15,20 @@ let numComputer = Math.floor(Math.random() * 6) + 1;
 let winner;
 
 if (numPlayer > numComputer) {
-    winner = "Ha vinto il giocatore"
+    winner = "Ha vinto il Player"
 } else if (numComputer > numPlayer) {
-    winner = "Ha vinto il computer"
+    winner = "Ha vinto il Computer"
 } else {
-    winner = "la partita è finita in pareggio"
+    winner = "la partita è finita in Pareggio"
 }
+
+document.querySelector(".playerNumber").innerHTML = `<span>Player: ${numPlayer}</span>`;
+
+document.querySelector(".computerNumber").innerHTML = `<span>Computer: ${numComputer}</span>`;
+
+document.querySelector(".winnerResult").innerHTML = `<span>Vincitore: ${winner}</span>`;
+
+
 
 console.log("Giocatore: " + numPlayer);
 console.log("Computer: " + numComputer);
