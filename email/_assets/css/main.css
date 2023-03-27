@@ -12,3 +12,24 @@ body {
     background: #0a0a0a;
     color: #fafafa;
 }
+
+.historyBack a{
+    color: #fafafa;
+}
+
+.form-control.border-confirm{
+    border: 1px solid greenyellow !important;
+}
+
+.form-control.border-error{
+    border: 1px solid red !important;
+}
+
+.accessText a{
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+}
+
+.accessText a:hover{
+    text-decoration: underline;
+}

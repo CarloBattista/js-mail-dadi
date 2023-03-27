@@ -16,8 +16,17 @@ let email = [
     "martinarossi@gmail.com" // 4
 ];
 
+const container = document.querySelector(".container");
+
 function btnSubmit() {
-    let inputEmail = document.querySelector("#inputEmail").value;
+    let inputEmail = document.querySelector(".inputEm").value;
     let isAuthorized = email.includes(inputEmail);
-    console.log(isAuthorized)
+
+    if (isAuthorized) {
+        document.querySelector(".container").innerHTML = `Accesso consentito.`;
+        // console.log("Accesso consentito.");
+    } else {
+        document.querySelector(".container").innerHTML = `Accesso negato. <span class="accessText"><a href="./index.html">Riprova</a></span>`;
+        // console.log("Accesso negato.");
+    }
 }
