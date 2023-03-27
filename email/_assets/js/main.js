@@ -1,6 +1,6 @@
 /*
 
-Chiedi all’utente la sua email,
+Chiedi all’utente la sua email, tramite un input
 
 controlla che sia nella lista di chi può accedere,
 
@@ -15,3 +15,9 @@ let email = [
     "annarossi@gmail.com", // 3
     "martinarossi@gmail.com" // 4
 ];
+
+function btnSubmit() {
+    let inputEmail = document.querySelector("#inputEmail").value;
+    let isAuthorized = email.includes(inputEmail);
+    console.log(isAuthorized)
+}
